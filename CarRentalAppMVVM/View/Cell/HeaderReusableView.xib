@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderReusableView" id="U6b-Vx-4bR" customClass="HeaderReusableView" customModule="CarRentalAppMVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="VeD-lL-cN6">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="239.66666666666666"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="I55-Y3-rIb">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="estimatedItemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezh-Oj-utw">
+                    <rect key="frame" x="20" y="259.66666666666669" width="210" height="20.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Ezh-Oj-utw" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="20" id="9ev-6C-9gi"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="Ezh-Oj-utw" secondAttribute="trailing" constant="20" id="L4Q-01-oYI"/>
+                <constraint firstAttribute="bottom" secondItem="Ezh-Oj-utw" secondAttribute="bottom" constant="20" id="LIj-pi-xxL"/>
+                <constraint firstItem="VeD-lL-cN6" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="cL9-sH-DMf"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="VeD-lL-cN6" secondAttribute="trailing" id="mNO-0c-weR"/>
+                <constraint firstItem="VeD-lL-cN6" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="qQw-02-rlB"/>
+                <constraint firstItem="Ezh-Oj-utw" firstAttribute="top" secondItem="VeD-lL-cN6" secondAttribute="bottom" constant="20" id="uRP-JH-giG"/>
+            </constraints>
+            <connections>
+                <outlet property="mainCollectionView" destination="VeD-lL-cN6" id="BsF-7h-THq"/>
+                <outlet property="vehiclesLabel" destination="Ezh-Oj-utw" id="hOI-iN-srR"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="84.154929577464799"/>
+        </collectionReusableView>
+    </objects>
+</document>
